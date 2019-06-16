@@ -1,14 +1,14 @@
-<form>
-    <div>
-        <label>Nome</label>
-        <input type="text" name="name" [(ngModel)]="usuario.nome" />    
-        <label>Email</label>
-        <input type="email" name="email" [(ngModel)]="usuario.email" />    
+<div class="ui-g-12 ui-md-4">
+    <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+        <input type="text" [(ngModel)]="usuario.nome" pInputText placeholder="Nome">
     </div>
-    <div>
-        {{usuario | json}}
+
+    <div class="ui-inputgroup">
+        <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+        <input type="email" [(ngModel)]="usuario.email" pInputText placeholder="Email">
     </div>
-    <button (click)="salvar()">
-        Salvar
-    </button>    
-</form>
+
+    <button pButton (click)="salvar()" label="Salvar">
+    </button>
+</div>
