@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import{Routes, RouterModule} from '@angular/router'
-import { HomeComponent } from './home/home.component';
-import { UsuarioComponent } from './usuario/usuario.component';
 
 const routes: Routes = [
   { path: 'home', 
@@ -10,6 +7,9 @@ const routes: Routes = [
   },
   { path: 'usuario', 
     loadChildren: './usuario/usuario.module#UsuarioModule'
+  },  
+  { path: 'estados', 
+    loadChildren: './estados/estados.module#EstadosModule'
   },
   { path: '', pathMatch:'full', redirectTo: '/home' }
 ];
