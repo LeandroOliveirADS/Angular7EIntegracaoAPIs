@@ -7,7 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import {MenuModule} from 'primeng/menu';
+import {MenubarModule} from 'primeng/menubar';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import {MenuModule} from 'primeng/menu';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MenuModule,
+    MenubarModule,
     AppRoutingModule,
     HttpClientModule
   ],
