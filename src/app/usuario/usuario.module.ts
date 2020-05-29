@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms'
 import {TableModule} from 'primeng/table';
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/components/inputtext/inputtext';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
 
 @NgModule({
   declarations: [UsuarioComponent, UsuarioCadastroComponent],
@@ -16,7 +17,8 @@ import {InputTextModule} from 'primeng/components/inputtext/inputtext';
     FormsModule,
     TableModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    ConfirmDialogModule
   ]
 })
 export class UsuarioModule { }

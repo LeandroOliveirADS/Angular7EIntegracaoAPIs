@@ -25,6 +25,10 @@ export class UsuarioService {
   }
 
   public listaUsuarios(): Observable<Usuario[]>{
-return this.http.get<Usuario[]>(this.url)
+    return this.http.get<Usuario[]>(this.url)
   }
+
+public deletar(id: string): Observable<any>{
+  return this.http.delete(this.url + "/" + id)
+}
 }
